@@ -145,11 +145,7 @@ class KongConfigurator(common.Installer):
                 "The kong plugin requires --fullchain-path to "
                 "install a cert.")
         
-        domains = []
-        if self._is_wildcard_domain(domain):
-            domains = self._determine_domains(domain)
-        else:
-            domains = [domain]
+        domains = [domain]
 
         if len(domains) == 0:
             logger.info("No route hosts matching %s",
