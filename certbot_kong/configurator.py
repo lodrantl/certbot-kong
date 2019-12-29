@@ -7,7 +7,6 @@ import zope.interface
 
 from acme import challenges
 
-import certbot.constants
 from certbot import errors
 from certbot import interfaces
 from certbot import util
